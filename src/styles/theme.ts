@@ -3,6 +3,7 @@ export type ThemeType = typeof theme;
 export const theme = {
     color: {
         primary: '#99d0fb',
+        secondary: '#ecfb99',
         black: '#010606',
         white: '#fff'
     },
@@ -21,9 +22,12 @@ export const theme = {
             fs5: '3.052rem' // 48.83px
         }
     },
-    mediaQueries: {
-        smallMax: '480px',
-        mediumMax: '768px',
-        bigMax: '960px'
+    breakPoint: {
+        xs: '0',
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1200px',
+        xxl: '1400px'
     }
 };

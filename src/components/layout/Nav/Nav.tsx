@@ -1,13 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components'
-import {ThemeType} from "../../styles/theme";
 
-type HeaderPropsType = {
-    theme?: ThemeType
-}
-
-export const Nav: React.FC<HeaderPropsType> = ({theme, ...restProps}) => {
+export const Nav = () => {
     return (
         <NavL>
             <NavItemL to={'#'}>
@@ -28,6 +23,11 @@ export const Nav: React.FC<HeaderPropsType> = ({theme, ...restProps}) => {
 
 // Styles
 const NavL = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  
+  width: 300px;
+
   border: 1px solid;
 `
 
