@@ -1,15 +1,11 @@
 import React from 'react';
-import './App.css';
-import {Header} from "./components/layout/Header/Header";
-import {Main} from "./components/layout/Main/Main";
-import {Skills} from "./components/layout/skills/skills";
+import {HomePage} from "./Pages/HomePage/HomePage";
+
 
 function App() {
     return (
         <>
-            <Header/>
-            <Main/>
-            <Skills/>
+            <HomePage/>
         </>
     );
 }
