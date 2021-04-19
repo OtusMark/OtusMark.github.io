@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType}>`
     font-family: ${({theme}) => theme.font.family.default};
     color: ${({theme}) => theme.color.black};
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
 
     // Default font size
     font-size: ${({theme}) => theme.font.size.defaultXL};
@@ -73,7 +73,6 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType}>`
 
   a {
     text-decoration: none;
-    color: ${({theme}) => theme.color.white};
   }
 
   textarea {

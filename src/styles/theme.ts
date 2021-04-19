@@ -1,13 +1,12 @@
 import {darken, lighten} from "polished";
 
-export type ThemeType = typeof theme;
-
 const primaryColor = '#8cc1ff'
 const secondaryColor = '#ff408c'
 
 export const theme = {
     variable: {
-        headerHeight: '150px'
+        headerHeight: '100px',
+        borderRadius: '30px'
     },
     color: {
         primary: {
@@ -38,9 +37,9 @@ export const theme = {
         }
     },
     font: {
-        source: `https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap`,
+        source: `https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono&display=swap`,
         family: {
-            default: `'Roboto', sans-serif`,
+            default: `'Roboto Mono', monospace`,
             montserrat: `'Montserrat', sans-serif`
         },
         size: {
@@ -70,3 +69,6 @@ export const theme = {
         desktopMax: '1980px',
     }
 };
+
+// Types
+export type ThemeType = typeof theme;
