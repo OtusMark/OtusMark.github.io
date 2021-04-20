@@ -6,8 +6,11 @@ import {homepageAPI} from "../api/api";
 import {Button} from "./common/Button";
 import {MontB2Bold} from "./typography/decorative/MontB2Bold";
 import Tilt from "react-parallax-tilt";
+import {useAlert} from "react-alert";
 
 export const ContactForm: React.FC<PropsType> = (props) => {
+
+    const alert = useAlert()
 
     const {
         onClickEvent
@@ -16,6 +19,7 @@ export const ContactForm: React.FC<PropsType> = (props) => {
     const onClickAction = () => {
         if (onClickEvent) {
             onClickEvent()
+            alert.success('I will contact you soon thank you')
         }
     }
 
@@ -46,6 +50,7 @@ export const ContactForm: React.FC<PropsType> = (props) => {
             homepageAPI.sendContact(values)
                 .then(() => onClickAction())
                 .then(() => actions.resetForm({values: {name: '', email: '', phone: '', description: ''}}))
+                .catch(() => alert.error('Network error occurred. Try again later'))
         }
     });
 

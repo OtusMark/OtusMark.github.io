@@ -7,6 +7,7 @@ import {MontB1Bold} from "../../../components/typography/decorative/MontB1Bold";
 import {ContactForm} from "../../../components/ContactForm";
 
 export const ContactMe = () => {
+
     return (
         <section id='ContactMe'>
             <SectionWrapper>
