@@ -18,8 +18,8 @@ export const ContactForm: React.FC<PropsType> = (props) => {
 
     const onClickAction = () => {
         if (onClickEvent) {
-            onClickEvent()
             alert.success('I will contact you soon thank you')
+            onClickEvent()
         }
     }
 
