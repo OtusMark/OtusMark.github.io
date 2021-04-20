@@ -17,8 +17,8 @@ export const ContactForm: React.FC<PropsType> = (props) => {
     } = props
 
     const onClickAction = () => {
+        alert.success('I will contact you soon, thank you')
         if (onClickEvent) {
-            alert.success('I will contact you soon thank you')
             onClickEvent()
         }
     }
