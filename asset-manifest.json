@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.4424d6bd.chunk.js",
-    "main.js.map": "/static/js/main.4424d6bd.chunk.js.map",
+    "main.js": "/static/js/main.f0a26ee5.chunk.js",
+    "main.js.map": "/static/js/main.f0a26ee5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9d4c9a74.js",
     "runtime-main.js.map": "/static/js/runtime-main.9d4c9a74.js.map",
-    "static/js/2.0517fb1b.chunk.js": "/static/js/2.0517fb1b.chunk.js",
-    "static/js/2.0517fb1b.chunk.js.map": "/static/js/2.0517fb1b.chunk.js.map",
+    "static/js/2.20fcfe17.chunk.js": "/static/js/2.20fcfe17.chunk.js",
+    "static/js/2.20fcfe17.chunk.js.map": "/static/js/2.20fcfe17.chunk.js.map",
     "static/js/3.8a1d58b2.chunk.js": "/static/js/3.8a1d58b2.chunk.js",
     "static/js/3.8a1d58b2.chunk.js.map": "/static/js/3.8a1d58b2.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.0517fb1b.chunk.js.LICENSE.txt": "/static/js/2.0517fb1b.chunk.js.LICENSE.txt",
+    "static/js/2.20fcfe17.chunk.js.LICENSE.txt": "/static/js/2.20fcfe17.chunk.js.LICENSE.txt",
     "static/media/CodeWars.33b9ae43.svg": "/static/media/CodeWars.33b9ae43.svg",
     "static/media/Email.5f007b92.svg": "/static/media/Email.5f007b92.svg",
     "static/media/GitHub.75bc0aed.svg": "/static/media/GitHub.75bc0aed.svg",
@@ -36,7 +36,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9d4c9a74.js",
-    "static/js/2.0517fb1b.chunk.js",
-    "static/js/main.4424d6bd.chunk.js"
+    "static/js/2.20fcfe17.chunk.js",
+    "static/js/main.f0a26ee5.chunk.js"
   ]
 }
