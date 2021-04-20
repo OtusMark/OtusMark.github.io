@@ -11,9 +11,8 @@ export const CodeExamples = () => {
                 <SectionIntro title='Code examples'
                               subtitle='Here you can see project examples that I have written to showcase part of my codding skills.'/>
                 <ExamplesContainer>
-                    {examples.map(item => <ExampleWrapper>
-                        <ExampleCard key={item.id}
-                                     title={item.title}
+                    {examples.map(item => <ExampleWrapper key={item.id}>
+                        <ExampleCard title={item.title}
                                      technologies={item.technologies}
                                      description={item.description}
                                      demoLink={item.demoLink}
@@ -28,8 +27,10 @@ export const CodeExamples = () => {
 // Styles
 const ExamplesContainer = styled.div`
   display: flex;
-  margin-left: -1.5rem;
+  justify-content: center;
   flex-wrap: wrap;
+
+  margin-left: -1.5rem;
 `
 
 const ExampleWrapper = styled.div`

@@ -44,17 +44,31 @@ const ContactsBlock = styled.div`
   ${ContactItem}:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  @media (max-width: 1400px) {
+    width: 100%;
+    
+    ${ContactItem} {
+      margin-bottom: 2rem;
+    }
+  }
 `
 
 const FormBlock = styled.div`
   width: 60%;
+  margin-left: 1rem;
+
+  @media (max-width: 1400px) {
+    width: 100%;
+    margin: 0;
+  }
 `
 
 const BlocksWrapper = styled.div`
   display: flex;
   
-  ${FormBlock} {
-    margin-left: 1rem;
+  @media (max-width: 1400px) {
+    flex-direction: column;
   }
 `
 

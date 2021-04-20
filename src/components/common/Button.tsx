@@ -23,7 +23,7 @@ const StyledButton = styled.button<StyledComponentProps<any, ThemeType, any, any
   display: flex;
   align-items: center;
   
-  padding: .7rem 1.4rem .7rem 1rem;
+  padding: .7rem 1.5rem .7rem 1rem;
   
   border: none;
   border-radius: ${({theme}) => theme.variable.borderRadius};

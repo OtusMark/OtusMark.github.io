@@ -2,9 +2,12 @@ import styled from "styled-components/macro";
 
 export const IconCircle = styled.div`
   position: relative;
-
+  
   width: 3rem;
   height: 3rem;
+
+  min-width: 3rem;
+  min-height: 3rem;
 
   background-color: ${({theme}) => theme.color.white};
 

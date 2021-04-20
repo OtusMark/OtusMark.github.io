@@ -6,8 +6,7 @@ const instance = axios.create({
 })
 
 export const homepageAPI = {
-
     sendContact(body: FormValueType) {
-        return instance.post('/clients', body)
+        return instance.post('/forms', body)
     }
 }

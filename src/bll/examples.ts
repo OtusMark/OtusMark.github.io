@@ -18,7 +18,7 @@ export const examples = [
     {
         id: 1,
         title: 'To do list',
-        technologies: [react, redux, typeScript, materialUI, styledComponents, storybook, storybook],
+        technologies: [react, redux, typeScript, materialUI, styledComponents, storybook],
         description: 'Small description of the project to let the viewer know what to expect. Demo project, super puper. 4 rows max! Another row of text bla bla bal',
         demoLink: 'https://github.com/OtusMark',
         codeLink: 'https://github.com/OtusMark'
@@ -26,22 +26,6 @@ export const examples = [
     {
         id: 2,
         title: 'chessmarketing.ca',
-        technologies: [react, typeScript, styledComponents, strapi, heroku],
-        description: 'Web site for canadian marketing agency. Made as single page',
-        demoLink: 'https://chessmarketing.ca/',
-        codeLink: 'https://github.com/OtusMark'
-    },
-    {
-        id: 3,
-        title: 'Test',
-        technologies: [react, typeScript, styledComponents, strapi, heroku],
-        description: 'Web site for canadian marketing agency. Made as single page',
-        demoLink: 'https://chessmarketing.ca/',
-        codeLink: 'https://github.com/OtusMark'
-    },
-    {
-        id: 4,
-        title: 'Test',
         technologies: [react, typeScript, styledComponents, strapi, heroku],
         description: 'Web site for canadian marketing agency. Made as single page',
         demoLink: 'https://chessmarketing.ca/',

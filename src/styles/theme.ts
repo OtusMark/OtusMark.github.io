@@ -30,10 +30,10 @@ export const theme = {
             800: '#424242',
         },
         black: '#2B2B2B',
-        white: '#e9e9e9',
+        white: '#f6f6f6',
         error: '#ff2b2b',
         gradient: {
-            bluePurple: 'linear-gradient(0, #8CE3FF -0.58%, #B18CFF 100%)'
+            bluePurple: 'linear-gradient(161.3deg, #8CE3FF -0.58%, #B18CFF 100%)'
         }
     },
     font: {

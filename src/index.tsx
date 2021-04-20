@@ -7,17 +7,18 @@ import {NormalizeCss} from './styles/NormalizeCss';
 import {GlobalStyles} from './styles/GlobalStyles';
 import {theme} from "./styles/theme";
 import {BrowserRouter} from "react-router-dom";
+import {OverflowWrapper} from "./components/layout/OverflowWrapper";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <ThemeProvider theme={theme}>
-                <NormalizeCss/>
-                <GlobalStyles/>
+    <BrowserRouter>
+        <ThemeProvider theme={theme}>
+            <NormalizeCss/>
+            <GlobalStyles/>
+            <OverflowWrapper>
                 <App/>
-            </ThemeProvider>
-        </BrowserRouter>
-    </React.StrictMode>,
+            </OverflowWrapper>
+        </ThemeProvider>
+    </BrowserRouter>,
     document.getElementById('root')
 );
 

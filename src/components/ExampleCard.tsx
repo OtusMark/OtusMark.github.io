@@ -36,8 +36,8 @@ export const ExampleCard: React.FC<PropsType> = (props) => {
                     {description}
                 </Description>
                 <ButtonWrapper>
-                    <Button><a href={demoLink} target='_blank'>Demo</a></Button>
-                    <Button><a href={codeLink} target='_blank'>Code</a></Button>
+                    <a href={demoLink} target='_blank'><Button>Demo</Button></a>
+                    <a href={codeLink} target='_blank'><Button>Code</Button></a>
                 </ButtonWrapper>
             </ExampleCardWrapper>
         </Tilt>
@@ -108,7 +108,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
 
-  button:not(:first-child) {
+  a:not(:first-child) {
     margin-left: 1.5rem;
   }
 `

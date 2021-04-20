@@ -59,14 +59,14 @@ const InputTextWrapper = styled.div`
 `
 
 const StyledInput = styled(InputMask)<StyledComponentProps<any, any, any, any>>`
-
-  
   padding: 1rem .5rem;
   margin-bottom: 20px;
   
   width: 100%;
   
-  border: 1px solid rgb(109, 109, 109);
+  border: none;
+  border-radius: ${({theme}) => theme.variable.borderRadius};
+  box-shadow: ${({theme}) => theme.shadow['1']};
 `
 
 const StyledError = styled.div`

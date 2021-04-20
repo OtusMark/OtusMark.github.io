@@ -11,8 +11,8 @@ export const MyStack = () => {
                 <SectionIntro title='My stack' subtitle='Here you can see the stack of technologies I am worked with.'/>
 
                     <CardsContainer >
-                        {stack.map(item => <CardWrapper>
-                            <StackCard key={item.id} iconURL={item.imgURL} title={item.title}/>
+                        {stack.map(item => <CardWrapper key={item.id}>
+                            <StackCard iconURL={item.imgURL} title={item.title}/>
                         </CardWrapper>)}
                     </CardsContainer>
             </SectionWrapper>
@@ -25,8 +25,10 @@ export const MyStack = () => {
 // Styles
 const CardsContainer = styled.div<StyledComponentProps<any, any, any, any>>`
   display: flex;
-  margin-left: -1.5rem;
+  justify-content: center;
   flex-wrap: wrap;
+
+  margin-left: -1.5rem;
 `
 
 const CardWrapper = styled.div`
