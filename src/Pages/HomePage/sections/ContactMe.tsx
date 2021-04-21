@@ -1,7 +1,6 @@
 import {SectionWrapper} from "../../../components/layout/SectionWrapper";
 import {SectionIntro} from "../../../components/layout/SectionIntro";
 import styled from "styled-components/macro";
-import {contacts} from '../../../bll/contacts'
 import {IconCircle} from "../../../components/common/IconCircle";
 import {MontB1Bold} from "../../../components/typography/decorative/MontB1Bold";
 import {ContactForm} from "../../../components/ContactForm";

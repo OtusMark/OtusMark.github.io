@@ -20,7 +20,7 @@ export const examples = [
         id: 1,
         title: 'To do list',
         technologies: [react, redux, typeScript, materialUI, styledComponents, storybook, jest],
-        description: 'Fully working To do list application, made using React with Redux-toolkit with unit test. This project showcases most of my skills.',
+        description: 'Fully working To do list application, made using React with Redux-toolkit, contains unit tests. This project showcases most of my skills.',
         demoLink: 'https://otusmark.github.io/todolist/',
         codeLink: 'https://github.com/OtusMark/todolist'
     },
@@ -34,9 +34,17 @@ export const examples = [
     },
     {
         id: 3,
+        title: 'Styled-Components library',
+        technologies: [react, typeScript, styledComponents],
+        description: 'styled components library I created for personal use. You are free to use these components if you want in your project.',
+        demoLink: 'https://otusmark.github.io/react-styled-components-library/',
+        codeLink: 'https://github.com/OtusMark/react-styled-components-library'
+    },
+    {
+        id: 4,
         title: 'Social network',
         technologies: [react, redux, typeScript, styledComponents],
-        description: 'Unfinished big study project. I used too learn from it a lot. As for right now contains many legacy code and no styles.',
+        description: 'Unfinished learning project. I used too learn from it a lot. As for right now contains many legacy code and no styles.',
         demoLink: 'https://otusmark.github.io/social-network/',
         codeLink: 'https://github.com/OtusMark/social-network'
     }
