@@ -13,22 +13,31 @@ import materialUI from "../assets/svg/stack/materialUI.svg";
 import storybook from "../assets/svg/stack/storybook.svg";
 import strapi from "../assets/svg/stack/strapi.svg";
 import heroku from "../assets/svg/stack/heroku.svg";
+import jest from "../assets/svg/stack/jest.svg";
 
 export const examples = [
     {
         id: 1,
         title: 'To do list',
-        technologies: [react, redux, typeScript, materialUI, styledComponents, storybook],
-        description: 'Small description of the project to let the viewer know what to expect. Demo project, super puper. 4 rows max! Another row of text bla bla bal',
-        demoLink: 'https://github.com/OtusMark',
-        codeLink: 'https://github.com/OtusMark'
+        technologies: [react, redux, typeScript, materialUI, styledComponents, storybook, jest],
+        description: 'Fully working To do list application, made using React with Redux-toolkit with unit test. This project showcases most of my skills.',
+        demoLink: 'https://otusmark.github.io/todolist/',
+        codeLink: 'https://github.com/OtusMark/todolist'
     },
     {
         id: 2,
-        title: 'chessmarketing.ca',
+        title: 'Marketing company website',
         technologies: [react, typeScript, styledComponents, strapi, heroku],
-        description: 'Web site for canadian marketing agency. Made as single page',
-        demoLink: 'https://chessmarketing.ca/',
-        codeLink: 'https://github.com/OtusMark'
+        description: 'Landing page demo build on React with Strapi CMS running on Heroku. Please wait while it loads, because heroku free accounts go to sleep often.',
+        demoLink: 'https://otusmark.github.io/chess-marketing/',
+        codeLink: 'https://github.com/OtusMark/chess-marketing'
+    },
+    {
+        id: 3,
+        title: 'Social network',
+        technologies: [react, redux, typeScript, styledComponents],
+        description: 'Unfinished big study project. I used too learn from it a lot. As for right now contains many legacy code and no styles.',
+        demoLink: 'https://otusmark.github.io/social-network/',
+        codeLink: 'https://github.com/OtusMark/social-network'
     }
 ]

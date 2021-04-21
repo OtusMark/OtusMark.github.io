@@ -13,6 +13,7 @@ import materialUI from "../assets/svg/stack/materialUI.svg";
 import storybook from "../assets/svg/stack/storybook.svg";
 import strapi from "../assets/svg/stack/strapi.svg";
 import heroku from "../assets/svg/stack/heroku.svg";
+import jest from "../assets/svg/stack/jest.svg";
 
 export const stack = [
     {
@@ -82,11 +83,16 @@ export const stack = [
     },
     {
         id: 14,
+        title: 'Jest',
+        imgURL: jest
+    },
+    {
+        id: 15,
         title: 'Strapi',
         imgURL: strapi
     },
     {
-        id: 15,
+        id: 16,
         title: 'Heroku',
         imgURL: heroku
     },

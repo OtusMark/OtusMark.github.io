@@ -6,17 +6,17 @@ export const contacts = [
     {
         id: 1,
         imgURL: whatsapp,
-        info: '+8 (911) 755-80-22'
+        info: '+7 (911) 755-80-22',
     },
     {
         id: 2,
         imgURL: linkedIn,
-        info: 'dasistmail765@gmail.com'
+        info: 'linkedin.com/in/kadiner-mark',
     },
     {
         id: 3,
         imgURL: email,
-        info: 'linkedin.com/in/kadiner-mark'
+        info: 'dasistmail765@gmail.com',
     },
 
 ]

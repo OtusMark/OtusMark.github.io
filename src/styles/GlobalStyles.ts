@@ -73,6 +73,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType}>`
 
   a {
     text-decoration: none;
+    color: ${({theme}) => theme.color.black};
   }
 
   textarea {

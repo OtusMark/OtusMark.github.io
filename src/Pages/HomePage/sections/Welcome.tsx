@@ -58,7 +58,7 @@ const WelcomeInner = styled.div`
 `
 
 const Photo = styled.div`
-  width: 100%;
+  width: 24rem;
   height: 24rem;
 `
 

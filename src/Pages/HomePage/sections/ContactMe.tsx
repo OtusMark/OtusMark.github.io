@@ -6,6 +6,10 @@ import {IconCircle} from "../../../components/common/IconCircle";
 import {MontB1Bold} from "../../../components/typography/decorative/MontB1Bold";
 import {ContactForm} from "../../../components/ContactForm";
 
+import whatsapp from "../../../assets/svg/common/Whatsapp.svg";
+import email from "../../../assets/svg/common/Email.svg";
+import linkedIn from "../../../assets/svg/common/LinkedIn.svg";
+
 export const ContactMe = () => {
 
     return (
@@ -15,14 +19,40 @@ export const ContactMe = () => {
                               subtitle='If you have a job to discuss, please contact me. You are also Welcome to add me as linkedIn contact if you want mentorship'/>
                 <BlocksWrapper>
                     <ContactsBlock>
-                        {contacts.map(item => (
-                            <ContactItem key={item.id}>
-                                <IconCircle>
-                                    <img src={item.imgURL} alt=""/>
-                                </IconCircle>
-                                <ContactInfo>{item.info}</ContactInfo>
-                            </ContactItem>
-                        ))}
+
+                        <ContactItem>
+                            <IconCircle>
+                                <img src={whatsapp} alt=""/>
+                            </IconCircle>
+                            <ContactInfo>
+                                <a href="tel:+79117558022">
+                                    +7 (911) 755-80-22
+                                </a>
+                            </ContactInfo>
+                        </ContactItem>
+
+                        <ContactItem>
+                            <IconCircle>
+                                <img src={linkedIn} alt=""/>
+                            </IconCircle>
+                            <ContactInfo>
+                                <a href='https://www.linkedin.com/in/kadiner-mark/' target='_blank'>
+                                    linkedin.com/in/kadiner-mark
+                                </a>
+                            </ContactInfo>
+                        </ContactItem>
+
+                        <ContactItem>
+                            <IconCircle>
+                                <img src={email} alt=""/>
+                            </IconCircle>
+                            <ContactInfo>
+                                <a href='mailto:dasistmail765@gmail.com'>
+                                    dasistmail765@gmail.com
+                                </a>
+                            </ContactInfo>
+                        </ContactItem>
+
                     </ContactsBlock>
                     <FormBlock>
                         <ContactForm/>
@@ -48,7 +78,7 @@ const ContactsBlock = styled.div`
 
   @media (max-width: 1400px) {
     width: 100%;
-    
+
     ${ContactItem} {
       margin-bottom: 2rem;
     }
@@ -67,7 +97,7 @@ const FormBlock = styled.div`
 
 const BlocksWrapper = styled.div`
   display: flex;
-  
+
   @media (max-width: 1400px) {
     flex-direction: column;
   }

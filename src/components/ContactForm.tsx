@@ -2,11 +2,11 @@ import styled, {StyledComponentProps} from "styled-components/macro";
 import {useFormik} from "formik";
 import React from "react";
 import {InputText} from "./common/InputText";
-import {homepageAPI} from "../api/api";
 import {Button} from "./common/Button";
 import {MontB2Bold} from "./typography/decorative/MontB2Bold";
 import Tilt from "react-parallax-tilt";
 import {useAlert} from "react-alert";
+import emailjs from 'emailjs-com'
 
 export const ContactForm: React.FC<PropsType> = (props) => {
 
@@ -44,12 +44,13 @@ export const ContactForm: React.FC<PropsType> = (props) => {
             name: '',
             email: '',
             phone: '',
-            description: ''
+            message: ''
         },
         onSubmit: (values, actions) => {
-            homepageAPI.sendContact(values)
+            // @ts-ignore
+            emailjs.send(process.env.REACT_APP_EMAIL_JS_ID, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, values, process.env.REACT_APP_EMAIL_JS_USER_ID)
                 .then(() => onClickAction())
-                .then(() => actions.resetForm({values: {name: '', email: '', phone: '', description: ''}}))
+                .then(() => actions.resetForm({values: {name: '', email: '', phone: '', message: ''}}))
                 .catch(() => alert.error('Network error occurred. Try again later'))
         }
     });
@@ -73,7 +74,7 @@ export const ContactForm: React.FC<PropsType> = (props) => {
                     <StyledInputText placeholder={'Full name'} {...formik.getFieldProps('name')} error={formik.errors.name}/>
                     <StyledInputText placeholder={'Email'} {...formik.getFieldProps('email')} error={formik.errors.email}/>
                     <StyledInputText placeholder={'Phone'} {...formik.getFieldProps('phone')} error={formik.errors.phone} mask={"+7 (999) 999 9999"}/>
-                    <StyledTextarea placeholder={'Description'} {...formik.getFieldProps('description')} rows="5"/>
+                    <StyledTextarea placeholder={'Message'} {...formik.getFieldProps('message')} rows="5"/>
                     <StyledButton type={'submit'}>Contact me</StyledButton>
                 </form>
             </FormWrapper>
@@ -151,5 +152,5 @@ export type FormValueType = {
     name: string
     email: string
     phone: string
-    description: string
+    message: string
 }
