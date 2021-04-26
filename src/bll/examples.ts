@@ -27,7 +27,7 @@ export const examples = [
     {
         id: 2,
         title: 'Marketing company website',
-        technologies: [react, typeScript, styledComponents, strapi, heroku],
+        technologies: [react, redux, typeScript, styledComponents, strapi, heroku],
         description: 'Landing page demo build on React with Strapi CMS running on Heroku. Please wait while it loads, because heroku free accounts go to sleep often.',
         demoLink: 'https://otusmark.github.io/chess-marketing/',
         codeLink: 'https://github.com/OtusMark/chess-marketing'
@@ -42,10 +42,18 @@ export const examples = [
     },
     {
         id: 4,
-        title: 'Social network',
-        technologies: [react, redux, typeScript, styledComponents],
-        description: 'Unfinished learning project. I used too learn from it a lot. As for right now contains many legacy code and no styles.',
-        demoLink: 'https://otusmark.github.io/social-network/',
-        codeLink: 'https://github.com/OtusMark/social-network'
-    }
+        title: 'Counter',
+        technologies: [react, redux, typeScript, sass],
+        description: 'Simple counter with settings menu, menu values are stored in local storage.',
+        demoLink: 'https://otusmark.github.io/counter/',
+        codeLink: 'https://github.com/OtusMark/counter'
+    },
+    // {
+    //     id: 4,
+    //     title: 'Social network',
+    //     technologies: [react, redux, typeScript, styledComponents],
+    //     description: 'Unfinished learning project. I used too learn from it a lot. As for right now contains many legacy code and no styles.',
+    //     demoLink: 'https://otusmark.github.io/social-network/',
+    //     codeLink: 'https://github.com/OtusMark/social-network'
+    // }
 ]
